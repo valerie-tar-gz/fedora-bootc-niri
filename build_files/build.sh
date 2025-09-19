@@ -19,6 +19,9 @@ dnf5 install -y niri flatpak tuigreet
 #Disable COPRs
 dnf5 -y copr disable yalter/niri
 
+#Rename just man file
+mv '/usr/share/doc/just/README.中文.md' '/usr/share/doc/just/README.zh-cn.md'
+
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
