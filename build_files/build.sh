@@ -17,7 +17,7 @@ dnf5 -y copr enable yalter/niri
 dnf5 install -y niri flatpak tuigreet
 
 #Disable COPRs
-dnf5 -y copr disable yalter/niri
+#dnf5 -y copr disable yalter/niri
 
 # Use a COPR Example:
 #
