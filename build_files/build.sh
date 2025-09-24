@@ -18,6 +18,8 @@
 #dnf5 install -y niri flatpak tuigreet
 dnf5 install -y fastfetch tuigreet niri
 
+rm -rf /usr/share/man
+
 #Disable COPRs
 #dnf5 -y copr disable yalter/niri-git
 
