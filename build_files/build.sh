@@ -19,7 +19,7 @@ echo "priority=1" | sudo tee -a /etc/yum.repos.d/_copr:copr.fedorainfracloud.org
 dnf5 install -y fastfetch tuigreet niri
 
 #Disable COPRs
-dnf5 -y copr disable yalter/niri
+dnf5 -y copr disable yalter/niri-git
 
 # Use a COPR Example:
 #
