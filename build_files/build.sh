@@ -15,7 +15,7 @@ dnf5 -y copr enable yalter/niri
 
 # Install packages
 #dnf5 install -y niri flatpak tuigreet
-dnf5 install -y fastfetch
+dnf5 install -y fastfetch niri tuigreet
 
 #Disable COPRs
 #dnf5 -y copr disable yalter/niri
