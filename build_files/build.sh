@@ -11,7 +11,8 @@
 
 #Enable COPRs
 dnf5 -y install 'dnf5-command(copr)'
-dnf5 -y copr enable yalter/niri
+dnf5 -y copr enable yalter/niri-git
+echo "priority=1" | sudo tee -a /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:yalter:niri-git.repo
 
 # Install packages
 #dnf5 install -y niri flatpak tuigreet
