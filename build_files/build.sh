@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -ouex pipefail
+#set -ouex pipefail
 
 ### Install packages
 
@@ -10,14 +10,14 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 #Enable COPRs
-dnf5 -y install 'dnf5-command(copr)'
-dnf5 -y copr enable yalter/niri
+#dnf5 -y install 'dnf5-command(copr)'
+#dnf5 -y copr enable yalter/niri
 
 # Install packages
-dnf5 install -y niri flatpak tuigreet
+#dnf5 install -y niri flatpak tuigreet
 
 #Disable COPRs
-dnf5 -y copr disable yalter/niri
+#dnf5 -y copr disable yalter/niri
 
 # Use a COPR Example:
 #
@@ -28,4 +28,4 @@ dnf5 -y copr disable yalter/niri
 
 #### Example for enabling a System Unit File
 
-systemctl enable podman.socket
+#systemctl enable podman.socket
