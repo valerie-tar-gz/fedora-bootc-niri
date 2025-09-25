@@ -10,19 +10,16 @@
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 #Enable COPRs
-#dnf5 -y install 'dnf5-command(copr)'
-#dnf5 -y copr enable yalter/niri-git
-#echo "priority=1" | sudo tee -a /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:yalter:niri-git.repo
+dnf5 -y install 'dnf5-command(copr)'
 
 # Install packages
-#dnf5 install -y niri flatpak tuigreet
-dnf5 install -y fastfetch tuigreet niri
+dnf5 install -y fastfetch tuigreet niri micro
 
 rm -rf /usr/share/man
 rm -rf /usr/share/doc/niri
 
 #Disable COPRs
-#dnf5 -y copr disable yalter/niri-git
+#dnf5 -y copr disable
 
 # Use a COPR Example:
 #
