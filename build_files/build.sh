@@ -19,6 +19,7 @@
 dnf5 install -y fastfetch tuigreet niri
 
 rm -rf /usr/share/man
+rm -rf /usr/share/doc/niri
 
 #Disable COPRs
 #dnf5 -y copr disable yalter/niri-git
