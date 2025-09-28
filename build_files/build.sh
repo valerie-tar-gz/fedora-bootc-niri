@@ -13,7 +13,7 @@
 dnf5 -y install 'dnf5-command(copr)'
 
 # Install packages
-dnf5 install -y fastfetch tuigreet niri micro
+dnf5 install -y greetd niri
 
 rm -rf /usr/share/man
 rm -rf /usr/share/doc/niri
